@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<stu>
-    <student id = "1">
-        <name> 20 </name>
-        <age> 1000 </age>
-    </student>
-</stu>
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+    <SrcID>100</SrcID>
+    <DstID>101</DstID>
+    <DevID>2</DevID>
+    <SensorAddress>16</SensorAddress>
+    <Counter>1</Counter>
+    <Cmd>3</Cmd>
+    <Status>1</Status>
+</Message>

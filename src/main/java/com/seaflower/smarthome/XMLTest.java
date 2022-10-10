@@ -40,6 +40,7 @@ public class XMLTest {
 
         } catch (DocumentException e) {
             e.printStackTrace();
+
         }
     }
 }
