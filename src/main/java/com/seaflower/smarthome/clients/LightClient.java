@@ -21,7 +21,7 @@ import java.util.TimerTask;
  * @updateRemark : [说明本次修改内容]
  */
 
-public class TempClient {
+public class LightClient {
     private Timer timer = null;
 
     // socket
@@ -38,7 +38,7 @@ public class TempClient {
             "    <SrcID>100</SrcID> \r\n" +
             "    <DstID>101</DstID> \r\n" +
             "    <DevID>2</DevID> \r\n" +
-            "    <SensorAddress>16</SensorAddress> \r\n" +
+            "    <SensorAddress>256</SensorAddress> \r\n" +
             "    <Counter>1</Counter> \r\n" +
             "    <Cmd>3</Cmd> \r\n" +
             "    <Status>1</Status>\r\n" +
@@ -73,7 +73,7 @@ public class TempClient {
                     Element root = document.getRootElement();
                     List<Element> list = root.elements();
                     for (Element e : list) {
-                        if ("SensorAddress".equals(e.getName())) e.setText("16");
+                        if ("SensorAddress".equals(e.getName())) e.setText("256");
                         if ("Counter".equals(e.getName())) e.setText("1");
                         res += e.getData() + "|";
                     }
@@ -108,8 +108,8 @@ public class TempClient {
     }
 
     public static void main(String[] args) {
-        TempClient tempClient = new TempClient();
-        tempClient.execute();
+        LightClient lightClient = new LightClient();
+        lightClient.execute();
     }
 
 }
